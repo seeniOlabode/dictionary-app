@@ -1,0 +1,71 @@
+/* Styles for font-family */
+
+[class*="sans"] {
+  /* Attribute has this value in a space-separated list somewhere */
+  @apply font-sans;
+}
+
+[class*="mono"] {
+  /* Attribute has this value in a space-separated list somewhere */
+  @apply font-mono;
+}
+
+[class*="serif"] {
+  /* Attribute has this value in a space-separated list somewhere */
+  @apply font-serif;
+}
+
+/* End font-family styles */
+
+/* Typography Styles */
+
+h1[class*="heading-l"] {
+  @apply font-bold text-dict-black-300;
+  font-size: 32px;
+  line-height: 33.57px;
+}
+
+h2[class*="heading-m"] {
+  @apply font-normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3[class*="heading-s"] {
+  @apply font-normal;
+  line-height: 16.78px;
+  font-size: 16px;
+}
+
+p[class*="body-m"] {
+  @apply font-normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+p[class*="body-s"] {
+  @apply font-normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* End Typography Styles */
+
+@media (min-width: 640px) {
+  h1[class*="heading-l"] {
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  p[class*="body-m"] {
+    @apply font-normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h3[class*="heading-s"] {
+    @apply font-normal;
+    line-height: 24px;
+    font-size: 20px;
+  }
+}
